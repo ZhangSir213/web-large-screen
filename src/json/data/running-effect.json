@@ -1,0 +1,58 @@
+{
+  "general": [
+    { "name": "养殖样本总数", "value": 27924 },
+    { "name": "活跃样本数", "value": 450 },
+    { "name": "覆盖APT组织数", "value": 215 },
+    { "name": "覆盖国家数", "value": 16 }
+  ],
+  "analysis": [
+    {
+      "sorts": "运行时长",
+      "Patchwork": "11min0s",
+      "Equation": "3min36s",
+      "Bitter": "12min9s"
+    },
+    {
+      "sorts": "IP总数",
+      "Patchwork": "9",
+      "Equation": "3",
+      "Bitter": "2"
+    },
+    {
+      "sorts": "域名总数",
+      "Patchwork": "8",
+      "Equation": "-",
+      "Bitter": "4"
+    },
+    {
+      "sorts": "文件操作总数",
+      "Patchwork": "32",
+      "Equation": "6",
+      "Bitter": "11"
+    },
+    {
+      "sorts": "注册表操作总数",
+      "Patchwork": "667",
+      "Equation": "15",
+      "Bitter": "49"
+    },
+    {
+      "sorts": "API总数",
+      "Patchwork": "4500",
+      "Equation": "880",
+      "Bitter": "687"
+    },
+    {
+      "sorts": "行为告警总数",
+      "Patchwork": "9",
+      "Equation": "5",
+      "Bitter": "6"
+    },
+    {
+      "sorts": "ATT&CK总数",
+      "Patchwork": "14",
+      "Equation": "10",
+      "Bitter": "9"
+    }
+  ]
+}
