@@ -7,37 +7,28 @@
       </div>
       <!-- 主体部分 -->
       <div id="UpperBox">
-        <!--上半部分最左边的框，最上面是“1+1+4”-->
-        <div id="UpperLeft">
-          <system-number />
-          <div style="height: 1%;" />
-          <!-- 用来分隔两个组件 -->
-          <monitor-analysis />
-        </div>
-        <!--中间的大框，用来放地图-->
         <div id="UpperMiddle">
           <world-country-chart />
-          <div id="Middle-LB">
-            <CountPieGraph />
-          </div>
         </div>
-        <!--右侧的框，用来放“养殖日志系统信息”和“养殖系统覆盖国家比例图”-->
         <div id="UpperRight">
+          <SystemNumber />
           <log-stat-inf />
           <SampleInfoCount />
         </div>
+      </div>
+      <div class="LowerBox">
+        <PCStateBar />
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import SystemNumber from './components/SystemNumber.vue';
 import WorldCountryChart from './components/WorldCountryChart.vue';
+import SystemNumber from './components/SystemNumber.vue';
 import LogStatInf from './components/LogStatInf.vue';
 import SampleInfoCount from './components/SampleInfoCount.vue';
-import MonitorAnalysis from './components/MonitorAnalysis.vue';
-import CountPieGraph from './components/CountPieGraph.vue';
+import PCStateBar from './components/PCStateBar.vue';
 </script>
 
 <style scoped>
@@ -48,18 +39,11 @@ import CountPieGraph from './components/CountPieGraph.vue';
 
 #topline {
   width: 100%;
-  height: 5rem;
+  height: 120px;
   padding: 0;
   justify-content: center;
   align-items: center;
   position: relative;
-}
-
-.MR-up {
-  border-top: 1px solid var(--component-border-color);
-  width: 100%;
-  height: 28rem;
-  background: var(--component-bg-color);
 }
 
 #fullppage {
@@ -71,39 +55,36 @@ import CountPieGraph from './components/CountPieGraph.vue';
 }
 
 #UpperBox {
-  height: 600px;
+  height: 1400px;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-#UpperLeft {
-  height: 100%;
-  width: 22%;
-  position: relative;
-}
-
 #UpperMiddle {
   height: 100%;
-  width: 56%;
+  width: 75%;
   position: relative;
-}
 
-#Middle-LB {
-  width: auto;
-  height: auto;
-  position: absolute;
-  bottom: 8px;
-  left: 8px;
 }
 
 #UpperRight {
   height: 100%;
-  width: 22%;
+  width: 25%;
   display: flex;
   flex-direction: column;
   position: relative;
   align-items: center;
+}
+
+#LowerBox {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--component-bg-color);
 }
 </style>

@@ -21,7 +21,7 @@ let _data = data.EffectGeneral;
 <style scoped>
 #养殖样本情况统计信息-1 {
     position: absolute;
-    bottom: 0;
+    bottom: 1%;
     width: 100%;
     height: 29%;
     background-color: var(--component-bg-color);

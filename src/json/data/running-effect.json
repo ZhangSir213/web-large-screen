@@ -1,4 +1,15 @@
 {
+  "pc_statements": [
+    { "name": "Win10x64-1", "state": "run", "target": "github.com" },
+    { "name": "Win7x86-2", "state": "stop", "target": "github.com" },
+    { "name": "Ubuntu22.3-1", "state": "error", "target": "github.com" },
+    { "name": "Win10x64-2", "state": "true", "target": "github.com" },
+    { "name": "Win7x86-1", "state": "false", "target": "github.com" },
+    { "name": "Ubuntu22.3-2", "state": "true", "target": "github.com" },
+    { "name": "Win10x64-3", "state": "run", "target": "github.com" },
+    { "name": "Win7x86-3", "state": "stop", "target": "github.com" },
+    { "name": "Ubuntu22.3-3", "state": "error", "target": "github.com"}
+  ],
   "general": [
     { "name": "养殖样本总数", "value": 27924 },
     { "name": "活跃样本数", "value": 450 },

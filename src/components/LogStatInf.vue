@@ -34,11 +34,11 @@ let _data = data.EffectAnalysis;
 <style scoped>
 #养殖日志统计信息 {
     width: 100%;
-    height: 69%;
+    height: 45%;
     background-color: var(--component-bg-color);
     border-top: 1px solid var(--component-border-color);
     position: absolute;
-    top: 0;
+    top: 11%;
 }
 
 .title {

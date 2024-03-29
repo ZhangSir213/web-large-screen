@@ -23,7 +23,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 19%;
+    height: 10%;
 }
 
 .box {
