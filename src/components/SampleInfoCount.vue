@@ -1,5 +1,6 @@
 <template>
     <div id="养殖样本情况统计信息-1">
+        <div style="height: 5%;"></div>
         <table class="border-table">
             <tbody class="tbody">
                 <tr v-for="d in _data" v-bind:key="d.sorts">
@@ -8,6 +9,7 @@
                 </tr>
             </tbody>
         </table>
+        <div style="height: 5%;"></div>
     </div>
 </template>
 
@@ -18,17 +20,18 @@ let _data = data.EffectGeneral;
 
 <style scoped>
 #养殖样本情况统计信息-1 {
-    
+    position: absolute;
+    bottom: 0;
     width: 100%;
-    height: auto;
-    padding: 0.25rem;
+    height: 29%;
     background-color: var(--component-bg-color);
 }
 
 .border-table {
+    margin-left: 5%;
     border-collapse: collapse;
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
 }
 
 .col-element {

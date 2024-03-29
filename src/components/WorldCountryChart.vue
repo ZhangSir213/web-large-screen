@@ -9,16 +9,12 @@ import geo from "../json/geo";
 import mapping from "../json/mapping";
 import data from "../json/data";
 
-/*
-  组件功能：展示世界地图各个国家数据
-  （与 WorldWideChart.vue 的区别在于这个是一级地图）
-*/
 
 const chartRef = ref<HTMLDivElement | null>(null);
 const { setOptions, echarts } = useEcharts(chartRef as Ref<HTMLDivElement>);
 echarts.registerMap("WorldCountry", geo.WorldCountryGeo);
 
-// 世界地图选项
+
 const options: echarts.EChartsOption = {
   toolbox: {
     show: false,
