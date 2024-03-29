@@ -1,6 +1,8 @@
 <template>
-    <div id="MR-TOP-in">
-        <div class="title">{{ "养殖日志统计信息" }}</div>
+    <div id="养殖日志统计信息">
+        <div class="title">
+            <h2 style="padding-top: 2%;">{{ "养殖日志统计信息" }}</h2>
+        </div>
         <div class="table-container">
             <table class="bordered-table">
                 <thead>
@@ -30,26 +32,23 @@ let _data = data.EffectAnalysis;
 </script>
 
 <style scoped>
-#MR-TOP-in {
+#养殖日志统计信息 {
     width: 100%;
-    height: auto;
-    background-color: #7c7c7c50;
-    border-top: 1px solid lightblue;
-    padding: 0.5rem;
+    height: 69%;
+    background-color: var(--component-bg-color);
+    border-top: 1px solid var(--component-border-color);
+    position: absolute;
+    top: 0;
 }
 
 .title {
-    padding-top: 0.5rem;
-    color: chartreuse;
-    font-size: 2rem;
-    font-weight: bold;
-    height: 3rem;
+    height: 15%;
     width: 100%;
-    text-align: center;
 }
 
 .table-container {
-    width: 100%;
+    width: 96%;
+    padding-left: 2%;
     overflow: auto;
 }
 

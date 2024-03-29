@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div id="一加一加四">
         <div class="box">
             <div class="word_in_box">{{ "分析改造模块" }}</div>
             <div class="num_in_box">{{ "1" }}</div>
@@ -19,17 +19,17 @@
 </script>
 
 <style scoped>
-.container {
+#一加一加四 {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 6rem;
+    height: 19%;
 }
 
 .box {
     width: 32%;
     height: 100%;
-    background-color: #7c7c7c50;
+    background-color: var(--component-bg-color);
     position: relative;
 }
 
@@ -38,10 +38,10 @@
     left: 0;
     top: 0;
 
-    border-top: 1px solid lightblue;
-    border-left: 1px solid lightblue;
+    border-top: 1px solid var(--component-border-color);
+    border-left: 1px solid var(--component-border-color);
 
-    color: lightcyan;
+    color: var(--font-color-chart-1);
     font-size: 1.125rem;
     text-align: left;
     padding-top: 0.5rem;
@@ -53,11 +53,11 @@
     right: 0;
     bottom: 0;
 
-    border-right: 1px solid lightblue;
-    border-bottom: 1px solid lightblue;
+    border-right: 1px solid var(--component-border-color);
+    border-bottom: 1px solid var(--component-border-color);
 
     font-weight: bold;
-    color: darkorange;
+    color: var(--font-color-highlight-1);
     font-size: 1.75rem;
     text-align: right;
     padding-bottom: 0.25rem;

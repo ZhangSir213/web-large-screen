@@ -1,4 +1,14 @@
-## 项目目录
+## 预备
+
+` npm install `
+` npm install sass `
+` npm install scss `
+
+## 启动
+
+` npm run dev `
+
+## 目录
 
 ```js
 ├─App.vue
@@ -29,7 +39,6 @@
 
 
 
-## 详细说明
+## 目前进度
 
 - 世界地图：目前配置为鼠标移动到对应国家上面时显示当前该国家名称以及样本数
-

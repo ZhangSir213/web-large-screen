@@ -1,5 +1,5 @@
 <template>
-    <div id="养殖样本情况统计信息-1">
+    <div id="养殖样本情况统计信息">
         <table class="border-table">
             <tbody class="tbody">
                 <tr v-for="d in _data" v-bind:key="d.sorts">
@@ -17,11 +17,11 @@ let _data = data.EffectGeneral;
 </script>
 
 <style scoped>
-#养殖样本情况统计信息-1 {
-    
+#养殖样本情况统计信息 {
     width: 100%;
     height: auto;
     padding: 0.25rem;
+    border-radius: 5%;
     background-color: var(--component-bg-color);
 }
 
