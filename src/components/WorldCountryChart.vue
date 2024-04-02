@@ -60,6 +60,33 @@ const options: echarts.EChartsOption = {
       data: data.CountryCount,
       nameMap: mapping.CountryNameZhMapping,
     },
+    {
+      type: "lines",
+      coordinateSystem: "geo",
+      zlevel: 10,
+      effect: {
+        show: true,
+        period: 4, // 图标飞跃速度，值越小速度越快
+        trailLength: 0.2, // 尾迹长度[0,1]值越大，尾迹越长
+        symbol: "pin", // 图标类型
+        symbolSize: 4, // 图标大小
+        color: "white", // 图标颜色
+      },
+      lineStyle: {
+        color: "#fff",
+        width: 5,
+        opacity: 0.6,
+        curveness: 0.2,
+      },
+      data:[
+        {
+          coords: [
+            [116.46, 39.92],
+            [-21.48, 31.22],
+          ],
+        },
+      ]
+    },
   ],
 };
 

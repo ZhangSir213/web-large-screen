@@ -20,7 +20,7 @@ let _data = data.EffectGeneral;
 
 <style scoped>
 #养殖样本情况统计信息-1 {
-    position: absolute;
+    position: absolute;;
     bottom: 1%;
     width: 100%;
     height: 29%;
@@ -28,10 +28,7 @@ let _data = data.EffectGeneral;
 }
 
 .border-table {
-    margin-left: 5%;
     border-collapse: collapse;
-    width: 90%;
-    height: 90%;
 }
 
 .col-element {

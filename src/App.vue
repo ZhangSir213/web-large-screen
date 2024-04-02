@@ -9,11 +9,12 @@
       <div id="UpperBox">
         <div id="UpperMiddle">
           <world-country-chart />
+          <SampleInfoCount />
         </div>
         <div id="UpperRight">
           <SystemNumber />
-          <log-stat-inf />
-          <SampleInfoCount />
+          <LogStatInf />
+          <SamplePieGraph />
         </div>
       </div>
       <div class="LowerBox">
@@ -28,6 +29,7 @@ import WorldCountryChart from './components/WorldCountryChart.vue';
 import SystemNumber from './components/SystemNumber.vue';
 import LogStatInf from './components/LogStatInf.vue';
 import SampleInfoCount from './components/SampleInfoCount.vue';
+import SamplePieGraph from './components/SamplePieGraph.vue';
 import PCStateBar from './components/PCStateBar.vue';
 </script>
 
@@ -55,7 +57,7 @@ import PCStateBar from './components/PCStateBar.vue';
 }
 
 #UpperBox {
-  height: 1400px;
+  height: 1500px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -66,7 +68,6 @@ import PCStateBar from './components/PCStateBar.vue';
   height: 100%;
   width: 75%;
   position: relative;
-
 }
 
 #UpperRight {

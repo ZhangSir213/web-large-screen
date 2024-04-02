@@ -1,6 +1,7 @@
 <template>
     <div id="底部PC机状态条">
-        <pcStatementItem v-for="d in _data" :key="d.id" :name="d.name" :state="d.state"></pcStatementItem>
+        <pcStatementItem v-for="d in _data" :key="d.id" :name="d.name" :state="d.state" :form="d.form"
+            :target="d.target"></pcStatementItem>
     </div>
 </template>
 
@@ -17,7 +18,7 @@ let _data = ref(data.PCStatement);
 <style scoped>
 #底部PC机状态条 {
     width: 100%;
-    height: 400px;
+    height: 300px;
     display: flex;
     flex-direction: row;
     justify-content: left;

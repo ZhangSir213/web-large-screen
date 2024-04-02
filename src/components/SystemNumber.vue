@@ -23,7 +23,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 10%;
+    height: 11%;
 }
 
 .box {
@@ -42,7 +42,7 @@
     border-left: 1px solid var(--component-border-color);
 
     color: var(--font-color-chart-1);
-    font-size: 1.125rem;
+    font-size: 1.375rem;
     text-align: left;
     padding-top: 0.5rem;
     padding-left: 0.5rem;
@@ -58,7 +58,7 @@
 
     font-weight: bold;
     color: var(--font-color-highlight-1);
-    font-size: 1.75rem;
+    font-size: 2rem;
     text-align: right;
     padding-bottom: 0.25rem;
     padding-right: 0.5rem;

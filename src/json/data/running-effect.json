@@ -1,17 +1,62 @@
 {
   "pc_statements": [
-    { "name": "Win10x64-1", "state": "run", "target": "github.com" },
-    { "name": "Win7x86-2", "state": "stop", "target": "github.com" },
-    { "name": "Ubuntu22.3-1", "state": "error", "target": "github.com" },
-    { "name": "Win10x64-2", "state": "true", "target": "github.com" },
-    { "name": "Win7x86-1", "state": "false", "target": "github.com" },
-    { "name": "Ubuntu22.3-2", "state": "true", "target": "github.com" },
-    { "name": "Win10x64-3", "state": "run", "target": "github.com" },
-    { "name": "Win7x86-3", "state": "stop", "target": "github.com" },
-    { "name": "Ubuntu22.3-3", "state": "error", "target": "github.com"}
+    {
+      "name": "Win10x64-1",
+      "form": "win10",
+      "state": "run",
+      "target": "https://www.github.com"
+    },
+    {
+      "name": "Win7x86-2",
+      "form": "win7",
+      "state": "stop",
+      "target": "github.com"
+    },
+    {
+      "name": "Ubuntu22.3-1",
+      "form": "ubuntu",
+      "state": "error",
+      "target": "github.com"
+    },
+    {
+      "name": "Win10x64-2",
+      "form": "win10",
+      "state": "run",
+      "target": "github.com"
+    },
+    {
+      "name": "Win7x86-1",
+      "form": "win7",
+      "state": "stop",
+      "target": "github.com"
+    },
+    {
+      "name": "Ubuntu22.3-2",
+      "form": "ubuntu",
+      "state": "run",
+      "target": "github.com"
+    },
+    {
+      "name": "Win10x64-3",
+      "form": "win10",
+      "state": "run",
+      "target": "github.com"
+    },
+    {
+      "name": "Win7x86-3",
+      "form": "win7",
+      "state": "stop",
+      "target": "github.com"
+    },
+    {
+      "name": "Ubuntu22.3-3",
+      "form": "ubuntu",
+      "state": "error",
+      "target": "github.com"
+    }
   ],
   "general": [
-    { "name": "养殖样本总数", "value": 27924 },
+    { "name": "养殖样本总数", "value": 11111 },
     { "name": "活跃样本数", "value": 450 },
     { "name": "覆盖APT组织数", "value": 215 },
     { "name": "覆盖国家数", "value": 16 }
@@ -65,5 +110,16 @@
       "Equation": "10",
       "Bitter": "9"
     }
+  ],
+  "monitor": [
+    { "name": "OsiTest", "status": true },
+    { "name": "ProcDump", "status": true },
+    { "name": "NetworkAnalysis", "status": true },
+    { "name": "APIAnalysis", "status": true },
+    { "name": "MemorySave", "status": true },
+    { "name": "ProcessMemory", "status": true },
+    { "name": "StaticAnalysis", "status": true },
+    { "name": "BehaviorSignatures", "status": true },
+    { "name": "YaraMatch", "status": true }
   ]
 }

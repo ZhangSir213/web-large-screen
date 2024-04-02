@@ -34,11 +34,11 @@ let _data = data.EffectAnalysis;
 <style scoped>
 #养殖日志统计信息 {
     width: 100%;
-    height: 45%;
+    height: 50%;
     background-color: var(--component-bg-color);
     border-top: 1px solid var(--component-border-color);
     position: absolute;
-    top: 11%;
+    top: 48%;
 }
 
 .title {
@@ -55,17 +55,17 @@ let _data = data.EffectAnalysis;
 .bordered-table {
     border-collapse: collapse;
     text-align: center;
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     color: #dae0ea;
     width: 100%;
 }
 
 .bordered-table th {
-    height: 2.25rem;
+    height: 2.375rem;
 }
 
 .col-element {
-    height: 2.25rem;
+    height: 2.375rem;
     border-top: 1px solid #cccccc4e;
     border-bottom: none;
     border-left: none;
