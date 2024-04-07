@@ -1,7 +1,5 @@
 <template>
-    <div id="grapher-pie">
-        <div id="oil-discount"></div>
-    </div>
+    <div id="oil-discount"></div>
 </template>
 
 <script setup>
@@ -57,7 +55,7 @@ function changeBar() {
         series: [
             {
                 type: "pie",
-                radius: ["35%", "70%"],
+                radius: ["55%", "65%"],
                 position: "center",
                 bottom: "0",
                 avoidLabelOverlap: false,
@@ -76,16 +74,6 @@ function changeBar() {
 </script>
 
 <style>
-#grapher-pie {
-    position: absolute;
-    top: 12%;
-    width: 100%;
-    height: 35%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--component-bg-color);
-}
 
 #oil-discount {
     width: 100%;

@@ -1,28 +1,26 @@
 <template>
-    <div id="养殖日志统计信息">
-        <div class="title">
-            <h2 style="padding-top: 2%;">{{ "养殖日志统计信息" }}</h2>
-        </div>
-        <div class="table-container">
-            <table class="bordered-table">
-                <thead>
-                    <tr>
-                        <th>养殖场景</th>
-                        <th>Patchwork</th>
-                        <th>Equation</th>
-                        <th>Bitter</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr v-for="d in _data" v-bind:key="d.sorts">
-                        <td class="col-element">{{ d.sorts }}</td>
-                        <td class="col-element">{{ d.Patchwork }}</td>
-                        <td class="col-element">{{ d.Equation }}</td>
-                        <td class="col-element">{{ d.Bitter }}</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+    <div class="title">
+        <h2 style="padding-top: 2%;">{{ "养殖日志统计信息" }}</h2>
+    </div>
+    <div class="table-container">
+        <table class="bordered-table">
+            <thead>
+                <tr>
+                    <th>养殖场景</th>
+                    <th>Patchwork</th>
+                    <th>Equation</th>
+                    <th>Bitter</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="d in _data" v-bind:key="d.sorts">
+                    <td class="col-element">{{ d.sorts }}</td>
+                    <td class="col-element">{{ d.Patchwork }}</td>
+                    <td class="col-element">{{ d.Equation }}</td>
+                    <td class="col-element">{{ d.Bitter }}</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </template>
 
@@ -32,15 +30,6 @@ let _data = data.EffectAnalysis;
 </script>
 
 <style scoped>
-#养殖日志统计信息 {
-    width: 100%;
-    height: 50%;
-    background-color: var(--component-bg-color);
-    border-top: 1px solid var(--component-border-color);
-    position: absolute;
-    top: 48%;
-}
-
 .title {
     height: 15%;
     width: 100%;

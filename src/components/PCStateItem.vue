@@ -9,7 +9,6 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps } from 'vue'
 defineProps<{
     name?: string,
     state?: string,
@@ -35,8 +34,8 @@ function skipToTarget(target: any) {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 240px;
-    height: 90%;
+    width: 270px;
+    height: 80%;
     background-color: var(--component-bg-color);
     border: 1px solid var(--component-border-color);
     margin: 10px;
@@ -47,13 +46,13 @@ function skipToTarget(target: any) {
     position: absolute;
     top: 10%;
     width: 100%;
-    height: 150px;
+    height: 180px;
 }
 
 .pc-id {
     position: absolute;
     bottom: 10%;
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: var(--font-color-chart-1);
 }
 .image0 {

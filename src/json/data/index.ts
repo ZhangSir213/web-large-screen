@@ -7,6 +7,7 @@ const data = {
   EffectGeneral: loadJSON(RunningEffect.general),
   EffectAnalysis: loadJSON(RunningEffect.analysis),
   PCStatement: loadJSON(RunningEffect.pc_statements),
+  BreedLog: loadJSON(RunningEffect.breed_log),
 };
 
 export default data;

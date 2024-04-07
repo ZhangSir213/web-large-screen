@@ -7,7 +7,7 @@
   color-scheme: light dark;
   color: rgba(169, 112, 112, 0.87);
 
-  background-color: #242424;
+  background-color: #090541;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -46,7 +46,7 @@ a:hover {
 
 /* 在body中定义整个页面的属性 */
 body {
-  background: radial-gradient(#000000ef, #001a1a);
+  background: radial-gradient(rgb(2, 2, 52, 80%), rgb(2, 5, 39));
   margin: 0;
   /* display: flex;
   place-items: center; */

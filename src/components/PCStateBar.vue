@@ -17,8 +17,11 @@ let _data = ref(data.PCStatement);
 
 <style scoped>
 #底部PC机状态条 {
-    width: 100%;
-    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: left;
