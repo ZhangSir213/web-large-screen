@@ -1,6 +1,62 @@
 {
+  "pc_statements": [
+    {
+      "name": "Win10x64-1",
+      "form": "win10",
+      "state": "run",
+      "target": "https://www.github.com"
+    },
+    {
+      "name": "Win7x86-2",
+      "form": "win7",
+      "state": "stop",
+      "target": "github.com"
+    },
+    {
+      "name": "Ubuntu22.3-1",
+      "form": "ubuntu",
+      "state": "error",
+      "target": "github.com"
+    },
+    {
+      "name": "Win10x64-2",
+      "form": "win10",
+      "state": "run",
+      "target": "github.com"
+    },
+    {
+      "name": "Win7x86-1",
+      "form": "win7",
+      "state": "stop",
+      "target": "github.com"
+    },
+    {
+      "name": "Ubuntu22.3-2",
+      "form": "ubuntu",
+      "state": "run",
+      "target": "github.com"
+    },
+    {
+      "name": "Win10x64-3",
+      "form": "win10",
+      "state": "run",
+      "target": "github.com"
+    },
+    {
+      "name": "Win7x86-3",
+      "form": "win7",
+      "state": "stop",
+      "target": "github.com"
+    },
+    {
+      "name": "Ubuntu22.3-3",
+      "form": "ubuntu",
+      "state": "error",
+      "target": "github.com"
+    }
+  ],
   "general": [
-    { "name": "养殖样本总数", "value": 27924 },
+    { "name": "养殖样本总数", "value": 11111 },
     { "name": "活跃样本数", "value": 450 },
     { "name": "覆盖APT组织数", "value": 215 },
     { "name": "覆盖国家数", "value": 16 }
@@ -53,6 +109,149 @@
       "Patchwork": "14",
       "Equation": "10",
       "Bitter": "9"
+    }
+  ],
+  "monitor": [
+    { "name": "OsiTest", "status": true },
+    { "name": "ProcDump", "status": true },
+    { "name": "NetworkAnalysis", "status": true },
+    { "name": "APIAnalysis", "status": true },
+    { "name": "MemorySave", "status": true },
+    { "name": "ProcessMemory", "status": true },
+    { "name": "StaticAnalysis", "status": true },
+    { "name": "BehaviorSignatures", "status": true },
+    { "name": "YaraMatch", "status": true }
+  ],
+  "breed_log": [
+    {
+      "id": 8352,
+      "value": 11111,
+      "timestamp": "2024-02-22 21:54:31,896",
+      "lasting_time": 200,
+      "group": "Bitter",
+      "package": "exe",
+      "machine": "win10-1",
+      "status": "down"
+    },
+    {
+      "id": 8353,
+      "value": 11111,
+      "timestamp": "2024-02-22 21:54:31,896",
+      "lasting_time": 200,
+      "group": "Bitter",
+      "package": "exe",
+      "machine": "win10-5",
+      "status": "runing"
+    },
+    {
+      "id": 8354,
+      "value": 11111,
+      "timestamp": "2024-02-22 21:54:31,896",
+      "lasting_time": 200,
+      "group": "Bitter",
+      "package": "dll",
+      "machine": "win10-2",
+      "status": "down"
+    },
+    {
+      "id": 8355,
+      "value": 11111,
+      "timestamp": "2024-02-22 21:54:31,896",
+      "lasting_time": 200,
+      "group": "Bitter",
+      "package": "exe",
+      "machine": "win10-3",
+      "status": "runing"
+    },
+    {
+      "id": 8356,
+      "value": 11111,
+      "timestamp": "2024-02-22 21:54:31,896",
+      "lasting_time": 200,
+      "group": "Bitter",
+      "package": "dll",
+      "machine": "win10-4",
+      "status": "runing"
+    },
+    {
+      "id": 8357,
+      "value": 11111,
+      "timestamp": "2024-02-22 21:54:31,896",
+      "lasting_time": 200,
+      "group": "白象",
+      "package": "exe",
+      "machine": "win10-1",
+      "status": "down"
+    },
+    {
+      "id": 8358,
+      "value": 11111,
+      "timestamp": "2024-02-22 21:54:31,896",
+      "lasting_time": 200,
+      "group": "Bitter",
+      "package": "exe",
+      "machine": "win10-2",
+      "status": "runing"
+    },
+    {
+      "id": 8359,
+      "value": 11111,
+      "timestamp": "2024-02-22 21:54:31,896",
+      "lasting_time": 200,
+      "group": "Bitter",
+      "package": "exe",
+      "machine": "win10-15",
+      "status": "runing"
+    },
+    {
+      "id": 8360,
+      "value": 11111,
+      "timestamp": "2024-02-22 21:54:31,896",
+      "lasting_time": 200,
+      "group": "NSA_Eqution",
+      "package": "dll",
+      "machine": "win7-1",
+      "status": "down"
+    },
+    {
+      "id": 8361,
+      "value": 11111,
+      "timestamp": "2024-02-22 21:54:31,896",
+      "lasting_time": 200,
+      "group": "Bitter",
+      "package": "doc",
+      "machine": "win10-office",
+      "status": "runing"
+    },
+    {
+      "id": 8362,
+      "value": 11111,
+      "timestamp": "2024-02-22 21:54:31,896",
+      "lasting_time": 200,
+      "group": "NSA_Eqution",
+      "package": "exe",
+      "machine": "win10-3",
+      "status": "runing"
+    },
+    {
+      "id": 8363,
+      "value": 11111,
+      "timestamp": "2024-02-22 21:54:31,896",
+      "lasting_time": 200,
+      "group": "Bitter",
+      "package": "exe",
+      "machine": "win10-2",
+      "status": "runing"
+    },
+    {
+      "id": 8364,
+      "value": 11111,
+      "timestamp": "2024-02-22 21:54:31,896",
+      "lasting_time": 200,
+      "group": "白象",
+      "package": "exe",
+      "machine": "win10-1",
+      "status": "runing"
     }
   ]
 }

@@ -15,6 +15,7 @@ const { setOptions, echarts } = useEcharts(chartRef as Ref<HTMLDivElement>);
 echarts.registerMap("WorldCountry", geo.WorldCountryGeo);
 
 
+
 const options: echarts.EChartsOption = {
   toolbox: {
     show: false,
@@ -41,10 +42,24 @@ const options: echarts.EChartsOption = {
       color: ['#e0ffff20', '#e0ffffaf'] // 颜色范围
     }
   },
+  geo: {
+    map: 'WorldCountry',
+    // ...
+    regions: [
+    ],
+    // 添加 'New York' 和 'Beijing' 的坐标
+    nameMap: {
+      '纽约': [-74.0059, 40.7128],
+      '北京': [116.4074, 39.9042]
+    }
+  },
   series: [
     {
       name: "世界地图",
       type: "map",
+      coordinateSystem: "geo",
+      zlevel: 1,
+      geoIndex: 0,
       map: "WorldCountry",
       label: {
         show: false,
@@ -56,10 +71,38 @@ const options: echarts.EChartsOption = {
           fontSize: "14",
         },
       },
-
       data: data.CountryCount,
-      nameMap: mapping.CountryNameZhMapping,
     },
+    {
+      name: '从纽约到北京',
+      type: 'lines',
+      zlevel: 2,
+      effect: {
+        show: true,
+        period: 6,
+        trailLength: 0.7,
+        color: '#fff',
+        symbolSize: 3
+      },
+      lineStyle: {
+        color: '#a6c84c',
+        width: 0,
+        curveness: 0.2
+      },
+      data: [
+        {
+          fromName: '北京',
+          toName: '纽约',
+          coords: [['-74.0059', '40.7128'], ['116.4074', '39.9042']]
+        }
+      ],
+      map: 'WorldCountry',
+      regions: [],
+      nameMap: {
+        '纽约': [-74.0059, 40.7128],
+        '北京': [116.4074, 39.9042]
+      }
+    }
   ],
 };
 
@@ -70,9 +113,9 @@ onMounted(() => {
 
 <style scoped>
 .chart {
-  width: 120%;
+  width: 124%;
   height: 120%;
-  margin-left: -10%;
+  margin-left: -12%;
   margin-top: -5%;
 }
 </style>
