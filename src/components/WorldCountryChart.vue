@@ -15,6 +15,7 @@ const { setOptions, echarts } = useEcharts(chartRef as Ref<HTMLDivElement>);
 echarts.registerMap("WorldCountry", geo.WorldCountryGeo);
 
 
+
 const options: echarts.EChartsOption = {
   toolbox: {
     show: false,
@@ -41,10 +42,24 @@ const options: echarts.EChartsOption = {
       color: ['#e0ffff20', '#e0ffffaf'] // 颜色范围
     }
   },
+  geo: {
+    map: 'WorldCountry',
+    // ...
+    regions: [
+    ],
+    // 添加 'New York' 和 'Beijing' 的坐标
+    nameMap: {
+      '纽约': [-74.0059, 40.7128],
+      '北京': [116.4074, 39.9042]
+    }
+  },
   series: [
     {
       name: "世界地图",
       type: "map",
+      coordinateSystem: "geo",
+      zlevel: 1,
+      geoIndex: 0,
       map: "WorldCountry",
       label: {
         show: false,
@@ -56,37 +71,38 @@ const options: echarts.EChartsOption = {
           fontSize: "14",
         },
       },
-
       data: data.CountryCount,
-      nameMap: mapping.CountryNameZhMapping,
     },
     {
-      type: "lines",
-      coordinateSystem: "geo",
-      zlevel: 10,
+      name: '从纽约到北京',
+      type: 'lines',
+      zlevel: 2,
       effect: {
         show: true,
-        period: 4, // 图标飞跃速度，值越小速度越快
-        trailLength: 0.2, // 尾迹长度[0,1]值越大，尾迹越长
-        symbol: "pin", // 图标类型
-        symbolSize: 4, // 图标大小
-        color: "white", // 图标颜色
+        period: 6,
+        trailLength: 0.7,
+        color: '#fff',
+        symbolSize: 3
       },
       lineStyle: {
-        color: "#fff",
-        width: 5,
-        opacity: 0.6,
-        curveness: 0.2,
+        color: '#a6c84c',
+        width: 0,
+        curveness: 0.2
       },
-      data:[
+      data: [
         {
-          coords: [
-            [116.46, 39.92],
-            [-21.48, 31.22],
-          ],
-        },
-      ]
-    },
+          fromName: '北京',
+          toName: '纽约',
+          coords: [['-74.0059', '40.7128'], ['116.4074', '39.9042']]
+        }
+      ],
+      map: 'WorldCountry',
+      regions: [],
+      nameMap: {
+        '纽约': [-74.0059, 40.7128],
+        '北京': [116.4074, 39.9042]
+      }
+    }
   ],
 };
 

@@ -20,7 +20,7 @@ let _data = ref(data.PCStatement);
     position: absolute;
     top: 0;
     left: 0;
-    width: auto;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: row;

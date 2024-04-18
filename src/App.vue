@@ -1,6 +1,6 @@
 <template>
   <div id="fullppage">
-    <div style="width: 99%; border:1px solid red">
+    <div style="width: 99%;">
       <!--标题行-->
       <div id="topline">
         <div id="数字替身-围框"></div>

@@ -1,4 +1,4 @@
-import WorldCountryGeo from './world-country-geo.json';
+import WorldCountryGeo from './world-country-geo-updated.json';
 import { loadJSON } from '/@/utils';
 
 const geo = {
